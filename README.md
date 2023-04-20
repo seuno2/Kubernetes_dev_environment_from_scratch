@@ -18,7 +18,9 @@
   
 - Setup Components
   - Kubeflow
-    - Cert-manager, Istio, Dex, OIDC AuthService, Kubeflow Namespace, Kubeflow Roles, Kubeflow Istio Resources, Kubeflow Pipelines, Katib, Central Dashboard, Admission Webhook, Notebooks & Jupyter Web App, Profiles + KKFAM, Volumnes Web App, Training Operator, User Namespace
+    <details>
+    <summary> Cert-manager, Istio, Dex, OIDC AuthService, Kubeflow Namespace, Kubeflow Roles, Kubeflow Istio Resources, Kubeflow Pipelines, Katib, Central Dashboard, Admission Webhook, Notebooks & Jupyter Web App, Profiles + KKFAM, Volumnes Web App, Training Operator, User Namespace </summary>
+    
     ```
     kustomize build common/cert-manager/cert-manager/base | kubectl apply -f -
     ```
@@ -82,6 +84,10 @@
     ```
     kustomize build common/user-namespace/base | kubectl apply -f -
     ```
+    
+    </details>
+![image](https://user-images.githubusercontent.com/121914727/233456983-e5419070-19a5-4b01-b95b-d5048320f07e.png)
+
     
   
   
